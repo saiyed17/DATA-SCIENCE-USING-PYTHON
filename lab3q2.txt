@@ -1,0 +1,17 @@
+myDict = {
+    "Enrollment Id" : [12345,45667,16789,69433],
+    "Student Name" : ["Diksha ","Jiva","Ronit","Heena"],
+    "Email Id ": ["Diksha r@nuv.ac.in","Jiva@nuv.ac.in","Ronitd@nuv.ac.in", "Heena@nuv.ac.in"]
+}
+
+def searchById(id):
+    for i in range(len(myDict["Enrollment Id"])):
+        enrollmentID = myDict["Enrollment Id"][i]
+        sName = myDict["Student Name"][i]
+        emailID = myDict["Email Id "][i]
+        if (myDict["Enrollment Id"][i] == id):
+            print(f"{enrollmentID:<7}{sName:12}{emailID:25}")
+
+inputID = int(input("Enter ID: "))
+print(searchById(inputID))
+12345  Diksha   Diksha r@nuv.ac.in       
