@@ -1,0 +1,30 @@
+# 11. Write a program to input roll no, physics marks, chemistry marks and maths marks out of 100. Calculate the total marks and percentage and status(pass/fail). If this student scores above 40 in 3 subjects, status is pass otherwise fail. calculate grade is status is pass.
+# If percentage > 70 : grade = "Distinction", If percentage > 60 : grade = "First Class", If percentage > 50 : grade = "Second Class", If percentage > 40 : grade = "Pass Class",
+
+rollNo = int(input("Enter roll no: "))
+physics = int(input("Enter physics marks: "))
+chemistry = int(input("Enter chemistry marks: "))
+maths = int(input("Enter maths marks: "))
+
+total = physics + chemistry + maths
+percentage = total / 3
+
+if physics > 40 and chemistry > 40 and maths > 40:
+    status = "Pass"
+else:
+    status = "Fail"
+
+if percentage > 70:
+    grade = "Distinction"
+elif percentage > 60:
+    grade = "First Class"
+elif percentage > 50:
+    grade = "Second Class"
+elif percentage > 40:
+    grade = "Pass Class"
+else:
+    grade = "Fail"
+print(f"Total marks: {total}")
+print(f"Percentage: {percentage}%")
+print(f"Status: {status}")
+print(f"Grade: {grade}")
