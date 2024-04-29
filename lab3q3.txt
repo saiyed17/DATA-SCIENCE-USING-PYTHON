@@ -1,0 +1,16 @@
+import pandas as pd
+data = [
+    (12345,"Diksha ","Diksha r@nuv.ac.in"),
+    (45667,"Jiva","Jiva@nuv.ac.in"),
+    (16789,"Ronit","Ronit@nuv.ac.in"),
+    (69433,"Heena","Heena@nuv.ac.in")
+]
+keys = ["Enrollment ID", "Student Name", "Email ID"]
+myDict = dict(zip(keys, map(list, zip(*data))))
+dataFrame = pd.DataFrame(myDict)
+print(dataFrame)
+   Enrollment ID Student Name            Email ID
+0          12345      Diksha   Diksha r@nuv.ac.in
+1          45667         Jiva      Jiva@nuv.ac.in
+2          16789        Ronit     Ronit@nuv.ac.in
+3          69433        Heena     Heena@nuv.ac.in
