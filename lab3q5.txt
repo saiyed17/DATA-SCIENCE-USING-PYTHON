@@ -1,0 +1,17 @@
+import csv
+import json
+
+# Read data from CSV file and transform it into a dictionary
+with open('data.csv', 'r') as f:
+    reader = csv.reader(f)
+    data = list(reader)[0]  # Flatten the list
+
+# Group data into chunks of 4 (stateid, name, population, no_of_uni)
+data = [data[n:n+4] for n in range(0, len(data), 4)]
+
+# Create a dictionary from the data
+states = {int(stateid): {"name": name, "population": int(population), "no_of_uni": int(no_of_uni)} for stateid, name, population, no_of_uni in data}
+
+# Write the dictionary to a JSON file
+with open('states.json', 'w') as f:
+    json.dump(states, f)
