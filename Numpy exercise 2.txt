@@ -1,0 +1,23 @@
+1. Create 1-D, 2-D and 3-D numpy array
+2. Print data type of array.
+3. Print shape and dimensions of all the three different array.
+4. Create another 1-D array of 12 elements filled with zero
+5. Create another 2-D array elements filled with ones.
+6. Create a 1-D array known as Maths Marks out of 100 having 20 elements.
+7. Sort the above array in ascending and descending order.
+8. Create a copy of sorted array to another variable by deep copying.
+9. Create 2-D array of 5x5 which is an identity matrix and then convert t+
+
+10. Create 2-D array of 3x3. Add one more row to it.
+11. Split above array created vertically and horizontally.
+12. Create 4x4 identity matrix. Add 4 to each element.
+13. Create 1-D array. Initialize with floating point values. Display its ceil, floor and round (with 2 decimal’s).
+14. Create 5x5 matrix. Display min, max, variance and standard deviation column-wise.
+15. Create a null vector of size 10 with 6th value filled with 200.
+16. Create a 1-D Array/Vector with values ranging from 100 to 150 in sequence.
+17. Reverse the above vector.
+18. Create a 5x5 matrix with values ranging from 0-24 using some function.
+19. Find indices of nonzero elements from [1,0,2,0,0,4,0,8]
+20. Create a 10x10 matrix with 1 on the borders and 0 inside.
+21. Create 8x8 matrix and fill with 1 and 0 in checkerboard pattern.
+22. Create two 3x3 matrix with random integer values. Perform matrix addition, multiplication and subtraction
