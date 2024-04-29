@@ -1,0 +1,44 @@
+# Write a python program to access following data structure
+# data=[(12345,"Diksha ","Diksha r@nuv.ac.in"),(45667,"Jiva","Jiva@nuv.ac.in"),
+# (16789,"Ronit","Ronitd@nuv.ac.in"),(69433,"Heena","Heena@nuv.ac.in")]
+
+data = [
+    (12345,"Diksha ","Diksha r@nuv.ac.in"),
+    (45667,"Jiva","Jiva@nuv.ac.in"),
+    (16789,"Ronit","Ronitd@nuv.ac.in"),
+    (69433,"Heena","Heena@nuv.ac.in")
+]
+
+def searchById(id):
+    for i in data:
+        stuID = i[0]
+        stuName = i[1]
+        stuEmail = i[2]
+        if (i[0] == id):
+            print(f"ID: {stuID}, NAME: {stuName}, EMAIL: {stuEmail}")
+
+def searchByName(name):
+    for i in data:
+        stuID = i[0]
+        stuName = i[1]
+        stuEmail = i[2]
+        if i[1] == name:
+            print(f"ID: {stuID}, NAME: {stuName}, EMAIL: {stuEmail}")
+
+def searchByEmail(email):
+    for i in data:
+        stuID = i[0]
+        stuName = i[1]
+        stuEmail = i[2]
+        if i[2] == email:
+            print(f"ID: {stuID}, NAME: {stuName}, EMAIL: {stuEmail}")
+
+
+inputID = int(input("Enter ID: "))
+print(searchById(inputID))
+inputName = input("Enter Name: ")
+print(searchByName(inputName))
+inputEmail = input("Enter Email: ")
+print(searchByEmail(inputEmail))
+ID: 12345, NAME: Diksha , EMAIL: Diksha r@nuv.ac.in
+ID: 45667, NAME: Jiva, EMAIL: Jiva@nuv.ac.in
