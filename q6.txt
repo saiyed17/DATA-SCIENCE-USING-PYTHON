@@ -1,0 +1,2 @@
+#description: 6: Difference between tuple and list
+#tuple is enclosed in parenthesis and list is enclosed in square brackets and tuple is immutable whereas list is mutable.
